@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="Red-pago"></div>
+
+
+    <div class="container">
+        <h1>Proceso de Pago</h1>
+        <div id="datos-personales">
+            <h2>Datos Personales y de Envío</h2>
+            <form id="form-datos-personales">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <button type="submit">Siguiente</button>
+            </form>
+        </div>
+
+        <div id="datos-pago" style="display: none;">
+            <h2>Datos de Pago</h2>
+            <form id="form-datos-pago">
+                <label for="numero-tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" required>
+
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="text" id="fecha-expiracion" name="fecha-expiracion" required>
+
+                <label for="codigo-seguridad">Código de Seguridad:</label>
+                <input type="text" id="codigo-seguridad" name="codigo-seguridad" required>
+
+                <label for="cupon">Cupón de Descuento (opcional):</label>
+                <input type="text" id="cupon" name="cupon">
+
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

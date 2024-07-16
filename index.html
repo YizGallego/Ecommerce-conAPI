@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Candles</title>
+    <link rel="shortcut icon" href="./images/corazon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="menu container">
+            <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.svg" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#lista-1">Productos</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <span id="cantidad-carrito">0</span>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div id="total-carrito"></div>
+                            <a href="#" id="Vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            <a href="#" id="pagar-carrito" class="btn-2">Pagar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <form id="customer-form" style="display:none;">
+            <input type="email" id="customer-email" placeholder="Email" required>
+            <input type="text" id="customer-name" placeholder="Nombre completo" required>
+            <input type="tel" id="customer-phone" placeholder="Número de teléfono" required>
+            <button type="submit" class="btn-2">Continuar al pago</button>
+        </form>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/yizfoto.png" alt="yizfoto">
+            </div>
+            <div class="header-txt">
+                <h1>Hola! soy Yiz, creadora de Love Candles</h1>
+                <p>Quiero crear velas magicas para que con su luz pidas un deseo</p>
+                <a href="#lista-1" class="btn-1">Compra ahora</a>
+
+            </div>
+
+        </div>
+        
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+           <div class="ofert-img">
+           <img src="images/p1.png" alt="">
+           </div>
+           <div class="ofert-txt">
+           <h3>VELAS AL POR MAYOR </h3>
+           <p>Nuestras velas estan disponibles para adquirirlas a un precio especial si las compras al por mayor.</p>
+           <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+            <img src="images/p2.png" alt="">
+            </div>
+            <div class="ofert-txt">
+            <h3>Souvenirs </h3>
+            <P>Tenemos un amplio catalogo para que junto con nosotros sorprendas con algo unico en tus recordatorios.</P>
+            <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+            <img src="images/p3.png" alt="">
+            </div>
+            <div class="ofert-txt">
+            <h3>OFERTAS </h3>
+            <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+    </section>
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+
+        <div class="product-content">
+            <div class="product">
+                <img src="images/1.png" alt="">
+                <div class="product-txt">
+                    <h3>Vela Ruda</h3>
+                    <p>Vela con aroma a salvia , abundante Ruda e intencionada para bloquear energias negativas.</p>
+                    <p class="precio">$5.000 CLP</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/2.png" alt="">
+                <div class="product-txt">
+                    <h3>CABEZA BUDA</h3>
+                    <p>Vela con aroma a elección.</p>
+                    <p class="precio">$3.500 CLP</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/3.png" alt="">
+                <div class="product-txt">
+                    <h3>ANGEL</h3>
+                    <p>Vela de Angel con aroma a elección.</p>
+                    <p class="precio">$2.500 CLP</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/4.png" alt="">
+                <div class="product-txt">
+                    <h3>AGATA FLORES</h3>
+                    <p>Torzo de mujer con flores bañadas en aroma a elección.</p>
+                    <p class="precio">$6.500 CLP</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/5.png" alt="">
+                <div class="product-txt">
+                    <h3>VIRGEN MARIA</h3>
+                    <p>Vela con aroma a elección.</p>
+                    <p class="precio">$5.500 CLP</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/6.png" alt="">
+                <div class="product-txt">
+                    <h3>VELA PARA MASAJE</h3>
+                    <p>Vela para masajes con hidratación profunda, Aroma a elección.</p>
+                    <p class="precio">$5.500 CLP</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor-pago"></div>
+    </main>
+
+    <section id="seccion-pago" class="container" style="display: none;">
+        <h2>Proceso de Pago</h2>
+        <div id="contenedor-pago"></div>
+    </section>
+
+<section class="icons-container">
+    <div class="icon-item">
+        <div class="icon-img">
+            <img src="images/i1.svg" alt="">
+        </div>
+        <div class="icon-txt">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem modi obcaecati deleniti quaerat.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="icon-item">
+        <div class="icon-img">
+            <img src="images/i2.svg" alt="">
+        </div>
+        <div class="icon-txt">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem modi obcaecati deleniti quaerat.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="icon-item">
+        <div class="icon-img">
+            <img src="images/i3.svg" alt="">
+        </div>
+        <div class="icon-txt">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem modi obcaecati deleniti quaerat.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="blog container">
+
+    <div class="blog-1">
+        <img src="images/b1.png" alt="">
+        <h3>Blog 1 </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia sed aspernatur? Quos inventore optio consectetur odit beatae rerum qui sit, expedita repellendus? Dicta, facere nisi! Consequatur eius beatae delectus.</p>
+    </div>
+
+    <div class="blog-1">
+        <img src="images/b2.png" alt="">
+        <h3>Blog 2 </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia sed aspernatur? Quos inventore optio consectetur odit beatae rerum qui sit, expedita repellendus? Dicta, facere nisi! Consequatur eius beatae delectus.</p>
+    </div>
+
+    <div class="blog-1 blog-3">
+        <img src="images/b3.png" alt="">
+        <h3>Ferias y Bazares </h3>
+        <p>En esta sección mantendremos informados a todos nuestros clientes sobre las proximas fechas para ferias y mas.</p>
+    </div>
+    
+</section>
+
+<footer class="footer" id="footer">
+    <div class="social-icons">
+        <img src="images/logo.png" alt="logo">
+        <div class="icon-row">
+          <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+          <a href="#"><img src="images/tiktok.svg" alt="TikTok"></a>
+        </div>
+      </div>
+        
+        <div class="footer-column">
+            <h3>Love Candles</h3>
+            <ul>
+                <li><a href="#">Tienda <span class="info-tooltip">Nuestra tienda esta ubicada en el Mall corazones - Av. Love  </span></a></li>
+                <li><a href="#">Hazte Mayorista <span class="info-tooltip">Quieres hacer parte de nuestro exclusivo grupo de mayoristas? puedes comprar mas de seis unidades iguales o surtidas y podras acceder a precios unicos. Si deseas mas información escribenos al WhatsApp 0000000</span></a></li>
+                <li><a href="#">Contacto <span class="info-tooltip">(+00) 0000000
+
+                    C.C LOVE
+                    
+                    C.C LOVE. Local 3033
+                    
+                    lovecandles@gmail.com</span></a></li>
+                
+              
+            </ul>
+
+            
+        </div>
+        <div class="footer-column">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Velas</a></li>
+                <li><a href="#">Difusores</a></li>
+                <li><a href="#">Velas Masajes</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>legal</h3>
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+               
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contáctanos</h3>
+            <p>(+00) 0000000</p>
+            <p>C.C LOVE</p>
+            <p>C.C LOVE. Local 3033</p>
+            <p>lovecandles@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="https://checkout.wompi.co/widget.js"></script>
+<script type="module" src="scrip.js"></script>
+    
+</body>
+</html> 
+
